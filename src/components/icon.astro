@@ -1,0 +1,16 @@
+---
+import Microsoft from "./icon/microsoft.astro";
+import Power from "./icon/power.astro";
+import Word from "./icon/word.astro";
+
+const iconMap = {
+    Microsoft: Microsoft,
+    Power: Power,
+    Word: Word,
+};
+
+const IconComponent = iconMap[Astro.props.name]
+---
+
+<IconComponent />
+

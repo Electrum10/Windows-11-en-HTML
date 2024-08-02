@@ -1,0 +1,24 @@
+---
+import Icon from './icon.astro';
+
+interface Props {
+    SVGName: string;
+    NombreIcono: string;
+    tamaño: number
+ }
+
+const {SVGName, NombreIcono, tamaño} = Astro.props
+---
+
+
+<main>
+    <Icon name={SVGName} />
+    <p>{NombreIcono}</p>
+</main>
+
+<style>
+
+    main {
+        text-align: center
+    }
+</style>
