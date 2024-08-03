@@ -2,11 +2,19 @@
 import Microsoft from "./icon/microsoft.astro";
 import Power from "./icon/power.astro";
 import Word from "./icon/word.astro";
+import Windows11 from "./icon/Windows11.astro";
+import Buscar from "./icon/buscar.astro"
+import RecuperarVentana from "./icon/recuperarVentana.astro"
+import Widgets from "./icon/widgets.astro"
 
 const iconMap = {
     Microsoft: Microsoft,
     Power: Power,
     Word: Word,
+    Windows11: Windows11,
+    Buscar: Buscar,
+    RecuperarVentana: RecuperarVentana,
+    Widgets: Widgets,
 };
 
 const IconComponent = iconMap[Astro.props.name]
