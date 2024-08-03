@@ -1,27 +1,42 @@
 ---
-import Icon from "./icon.astro"
+import Icon from "./icon.astro";
 ---
 
 <div class="BarraTareas">
-	<Icon name="Windows11"/>
-	<Icon name="Buscar"/>
-	<Icon name="RecuperarVentana"/>
-	<Icon name="Widgets"/>
+	<div class="Izquierda" />
+
+  <div class="Medio">
+    <Icon name="Windows11" />
+    <Icon name="Buscar" />
+    <Icon name="RecuperarVentana" />
+    <Icon name="Widgets" />
+    <Icon name="Zoom" />
+    <Icon name="Carpeta" />
+    <Icon name="Microsoft" />
+  </div>
+  <div class="Derecha">
+	<Icon name="FlechaArriba" />
+    <Icon name="Wifi" />
+	<Icon name="Sonido" />
+  </div>
 </div>
 
-
 <style>
-    .BarraTareas {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-		width:100%;
-		height: 5%;
-		position: absolute;
-		background-color: rgba(128, 128, 128,0.9);
-		bottom: 0;
-		left: 50%;
-		transform: translateX(-50%);
-	}
+  .BarraTareas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.9);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .Derecha{
+	/* padding-right: 2%; */
+  }
 </style>

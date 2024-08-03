@@ -6,6 +6,14 @@ import Windows11 from "./icon/Windows11.astro";
 import Buscar from "./icon/buscar.astro"
 import RecuperarVentana from "./icon/recuperarVentana.astro"
 import Widgets from "./icon/widgets.astro"
+import Zoom from "./icon/zoom.astro";
+import Carpeta from "./icon/carpeta.astro"
+import MicrosoftStore from "./icon/MicrosoftStore.astro"
+import OneNote from "./icon/onenote.astro"
+import Wifi from "./icon/wifi.astro";
+import FlechaArriba from "./icon/flechaArriba.astro";
+import Sonido from "./icon/sonido.astro"
+
 
 const iconMap = {
     Microsoft: Microsoft,
@@ -15,6 +23,13 @@ const iconMap = {
     Buscar: Buscar,
     RecuperarVentana: RecuperarVentana,
     Widgets: Widgets,
+    Zoom: Zoom,
+    Carpeta: Carpeta,
+    MicrosoftStore: MicrosoftStore,
+    OneNote: OneNote,
+    Wifi: Wifi,
+    FlechaArriba: FlechaArriba,
+    Sonido: Sonido,
 };
 
 const IconComponent = iconMap[Astro.props.name]
