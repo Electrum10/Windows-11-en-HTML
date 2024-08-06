@@ -1,0 +1,37 @@
+---
+import Icon from "../icon.astro"
+---
+
+<div class="Derecha">
+	<Icon name="FlechaArriba" />
+    <Icon name="Wifi" />
+	<Icon name="Sonido" />
+  <div class="FechaYHora">
+    <p id="Hora"></p>
+    <p id="Fecha"></p>
+  </div>
+  </div>
+<script src="../../Logica.js"></script>
+<style>
+    .Derecha{
+	display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 1%;
+
+  .FechaYHora {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+
+
+  #Hora {
+    margin: 0; /* ajusta el margen inferior */
+  }
+
+  #Fecha {
+    margin: 0; /* ajusta el margen superior */
+  }
+}
+  }
+</style>

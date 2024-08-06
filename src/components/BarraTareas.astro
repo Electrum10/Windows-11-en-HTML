@@ -1,36 +1,16 @@
 ---
 import Icon from "./icon.astro";
+import Izquierda from "./BarraTareas/izquierda.astro";
+import Medio from "./BarraTareas/medio.astro";
+import Derecha from "./BarraTareas/derecha.astro";
 ---
 
-<div class="BarraTareas">
-	<div class="Izquierda">
-    <img src="" alt="Logo del tiempo de hoy" id="IconoTiempo">
-    <div class="TemperaturaYDescripción">
-      <p id="Temperatura">ssss</p>
-      <p id="Descripción">saaa</p>
-    </div>
-  </div>
+<main class="BarraTareas">
+ <Izquierda />
+  <Medio />
+  <Derecha />
+</main>
 
-  <div class="Medio">
-    <Icon name="Windows11" />
-    <Icon name="Buscar" />
-    <Icon name="RecuperarVentana" />
-    <Icon name="Widgets" />
-    <Icon name="Zoom" />
-    <Icon name="Carpeta" />
-    <Icon name="Microsoft" />
-  </div>
-  <div class="Derecha">
-	<Icon name="FlechaArriba" />
-    <Icon name="Wifi" />
-	<Icon name="Sonido" />
-  <div class="FechaYHora">
-    <p id="Hora"></p>
-    <p id="Fecha"></p>
-  </div>
-  </div>
-</div>
-<script src="../Logica.js"></script>
 <style>
   .BarraTareas {
     display: flex;
@@ -45,46 +25,5 @@ import Icon from "./icon.astro";
     transform: translateX(-50%);
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .Izquierda {
-    display: flex;
-    margin: 0px;
-    align-items: center;
-    padding-left: 0.7%;
-
-    img {
-      width: 40%;
-    }
-    #Temperatura{
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-    #Descripción{
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-  }
-
-  .Derecha{
-	display: flex;
-  align-items: center;
-  gap: 20px;
-  padding-right: 1%;
-
-  .FechaYHora {
-  display: block;
-  font-size: 12px;
-  text-align: right;
-
-
-  #Hora {
-    margin: 0; /* ajusta el margen inferior */
-  }
-
-  #Fecha {
-    margin: 0; /* ajusta el margen superior */
-  }
-}
   }
 </style>

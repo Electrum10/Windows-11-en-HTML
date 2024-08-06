@@ -1,34 +1,12 @@
 ---
 import BarraTareas from '../components/BarraTareas.astro'
 import Layout from '../layouts/Layout.astro';
-import App from '../components/App.astro';
+import Fondo from '../components/Fondo/fondo.astro';
 ---
 
 <Layout title="Windows 11">
 	<main>
+		<Fondo />
 		<BarraTareas />
-		<div class="FondoNegro">
-			<div class="Iconos">
-				<App SVGName='Word'NombreIcono='Word' />
-				<App SVGName='Microsoft'NombreIcono='Microsoft'/>
-				<App SVGName='Power'NombreIcono='Power'/>
-				</div>
-		</div>
 	</main>
 </Layout>
-
-<style>
-	.Iconos {
-		display: grid;
-		grid-template-columns: repeat(6, 1fr);
-	}
-	.FondoNegro {
-		width:50%;
-		position: absolute;
-		background-color: #bbbbbb;
-		bottom: 0;
-		margin-bottom: 3.5%;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-</style>

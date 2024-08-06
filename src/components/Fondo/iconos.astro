@@ -1,0 +1,17 @@
+---
+import Icono from "./Icono.astro"
+
+---
+
+<div class="Iconos">
+    <Icono SVGName='Word'NombreIcono='Word' />
+    <Icono SVGName='Microsoft'NombreIcono='Microsoft'/>
+    <Icono SVGName='Power'NombreIcono='Power'/>
+</div>
+
+<style>
+    .Iconos {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+	}
+</style>
