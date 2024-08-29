@@ -1,23 +1,26 @@
 ---
 import Iconos from "./iconos.astro"
+import Buscador from "./buscador.astro"
 ---
 
 
 
 <div class="FondoNegro">
+    <Buscador />
     <Iconos />
 </div>
 
 
 <style>
     .FondoNegro {
-    width:50%;
+    width:45%;
     position: absolute;
     background-color: #bbbbbb;
     bottom: 0;
     margin-bottom: 10vh;
     left: 50%;
     transform: translateX(-50%);
+    padding: 30px;
 }
 </style>
 
